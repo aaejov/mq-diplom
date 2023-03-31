@@ -235,6 +235,16 @@ h1 {
 .img {
   width: 381px;
 }
+.img:after {
+  content: "";
+  position: absolute;
+  background: black;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .content {
   margin-left: 30px;
 }
