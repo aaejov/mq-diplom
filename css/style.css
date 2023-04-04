@@ -103,7 +103,7 @@ h1 {
   position: relative;
 }
 
-.trend-content::after {
+.trend-content:after {
   content: "";
   position: absolute;
   background: black;
@@ -508,7 +508,6 @@ input:focus {
   flex-direction: row;
   padding: 0px;
   justify-content: center;
-  padding: 0;
   max-width: 1200px;
 }
 .shop-border {
