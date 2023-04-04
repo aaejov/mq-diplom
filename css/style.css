@@ -103,7 +103,7 @@ h1 {
   position: relative;
 }
 
-.trend-content:after {
+.trend-content::after {
   content: "";
   position: absolute;
   background: black;
@@ -478,6 +478,111 @@ input:focus {
 .theme-card {
   border-bottom: solid 1px #eeeeee;
 }
+
+/* shops */
+
+.shops {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.shops-title {
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.shops-title::after {
+  content: "";
+  display: block;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  width: 66px;
+  height: 3px;
+  margin: 10px auto 0 auto;
+}
+.shops-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: center;
+  padding: 0;
+  max-width: 1200px;
+}
+.shop-border {
+  outline: 3px solid #d3c59d;
+  margin-top: -15px;
+  padding-top: 15px;
+  outline-offset: 15px;
+  min-height: 266px;
+}
+.shop-title {
+  text-transform: uppercase;
+  color: black;
+  padding-top: 25px;
+}
+.shop-text {
+  font-size: 15px;
+  color: black;
+  padding-bottom: 25px;
+}
+.shop-content {
+  width: 33.33%;
+  padding: 0 20px 64px;
+  flex-grow: 1;
+}
+.shop-content:nth-child(n+2) {
+  margin-left: 61px;
+}
+.buy {
+  display: flex;
+  justify-content: space-between;
+}
+.buy-button {
+  width: 140px;
+  height: 50px;
+  background-color: #b69f5b;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.buy-button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.shop-content-image {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.shop-link {
+  text-decoration: none;
+  color: #bb9e5c;
+}
+.shop-link:hover {
+  text-decoration: underline;
+}
+.old-price {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: line-through; 
+}
+.price {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* shops end */
+
+/* footer */
 .referense {
   background-color: #f4f7f6;
   width: 1170px;
