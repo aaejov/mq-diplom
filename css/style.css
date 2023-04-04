@@ -515,7 +515,7 @@ input:focus {
   margin-top: -15px;
   padding-top: 15px;
   outline-offset: 15px;
-  min-height: 266px;
+  min-height: 230px;
 }
 .shop-title {
   text-transform: uppercase;
