@@ -234,14 +234,17 @@ h1 {
 }
 .img {
   width: 381px;
+  min-width: 381px;           
+  background-color: grey;
+  min-height: 300px;
 }
 .content {
   margin-left: 30px;
 }
 .category {
-  display: flex;
-  justify-content: flex-start;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .category-item {
   margin-right: 19px;
@@ -328,6 +331,15 @@ h1 {
 .posts-card-img {
   width: 70px;
   margin: 3px 19px 0 0;
+}
+.aside-img {
+  background-color: grey;
+  width: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  font-size: 10px;
 }
 .posts-card-content-data {
   font-size: 12px;
@@ -640,4 +652,5 @@ input:focus {
   color: #999999;
   font-weight: 700;
   margin-top: 73px;
+  text-decoration: none;
 }
