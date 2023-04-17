@@ -234,9 +234,10 @@ h1 {
 }
 .img {
   width: 381px;
-  min-width: 381px;           
-  background-color: grey;
+  min-width: 381px;
+  background-color: #f4f7f6;
   min-height: 300px;
+  color: black;
 }
 .content {
   margin-left: 30px;
@@ -331,9 +332,10 @@ h1 {
 .posts-card-img {
   width: 70px;
   margin: 3px 19px 0 0;
+  color: black;
 }
 .aside-img {
-  background-color: grey;
+  background-color: #f4f7f6;
   width: 70px;
   max-width: 70px;
   max-height: 70px;
@@ -544,7 +546,7 @@ input:focus {
   padding: 0 20px 64px;
   flex-grow: 1;
 }
-.shop-content:nth-child(n+2) {
+.shop-content:nth-child(n + 2) {
   margin-left: 61px;
 }
 .buy {
@@ -583,7 +585,7 @@ input:focus {
   color: black;
   font-size: 14px;
   font-weight: bold;
-  text-decoration: line-through; 
+  text-decoration: line-through;
 }
 .price {
   color: black;
@@ -654,3 +656,155 @@ input:focus {
   margin-top: 73px;
   text-decoration: none;
 }
+
+/* popup desktop */
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  /* display: none; */
+}
+
+.popup-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-body {
+  width: 390px;
+  padding: 55px 30px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+}
+.popup-close {
+  background-image: url("../svg/form-x.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -26px;
+  right: 0;
+  cursor: pointer;
+}
+.popup-hint {
+  display: block;
+  color: #0f0d0e;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.popup-entry {
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 30px;
+  font-family: inherit;
+  outline: none;
+  font-size: 13px;
+  background-color: #f4f7f6;
+}
+.popup-body textarea:focus {
+  border: 1px solid #bb9e5c;
+}
+.popup-body select:focus {
+  border: 1px solid #bb9e5c;
+}
+.popup-title {
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.popup-title::after {
+  content: "";
+  display: block;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  width: 66px;
+  height: 3px;
+  margin: 10px auto 0 auto;
+}
+.popup-button {
+  border: none;
+  background-color: #b69f5b;
+  width: 100%;
+  height: 45px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.popup-button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.popup-textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+}
+.select {
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 8px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.radio-group-text {
+  font-family: inherit;
+  color: #0f0d0e;
+  font-size: 13px;
+}
+.radio-group-text::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.radio-group {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 32px;
+  margin-right: 15px;
+}
+.radio:checked ~ .radio-group-text::before {
+  background-image: url("../svg/form-circle.svg");
+}
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* popup desctop end */
