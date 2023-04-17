@@ -666,7 +666,7 @@ input:focus {
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
-  /* display: none; */
+  display: none;
 }
 
 .popup-container {
