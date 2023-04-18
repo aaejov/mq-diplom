@@ -19,6 +19,8 @@ body {
   font-family: "Open Sans";
   color: #ffffff;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .header {
   background-image: url(../images/banner-bg.jpg);
@@ -27,6 +29,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
   padding: 25px 15px 100px 15px;
 }
 .header::after {
@@ -45,12 +48,16 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 0 auto;
-  width: 1200px;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 300px;
   z-index: 2;
 }
 .logo {
   width: 179px;
+}
+.burger-menu {
+  display: none;
 }
 .menu-list {
   display: flex;
@@ -72,7 +79,7 @@ body {
   text-decoration: underline;
 }
 .block-header {
-  width: 679px;
+  max-width: 679px;
   position: relative;
   margin-top: 70px;
   margin-left: auto;
@@ -80,11 +87,18 @@ body {
   z-index: 2;
 }
 h1 {
-  font-size: 43px;
+  /* font-size: 43px;
   font-weight: bold;
   line-height: 80px;
   text-transform: uppercase;
+  text-align: center; */
+
   text-align: center;
+  font-size: 43px;
+  text-transform: uppercase;
+  max-width: 700px;
+  margin: 125px auto;
+  line-height: 70px;
 }
 /* header end ok */
 
@@ -213,16 +227,19 @@ h1 {
 
 .container {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
-  padding: 64px 15px 0 0;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 60px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .main {
-  width: 778px;
-  margin-right: auto;
+  max-width: 778px;
+  margin-right: 35px;
 }
 .card {
-  width: 778px;
+  justify-content: left;
   display: flex;
   margin-top: 59px;
 }
@@ -496,7 +513,7 @@ input:focus {
 /* shops */
 
 .shops {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0px auto;
 }
 .shops-title {
@@ -522,7 +539,7 @@ input:focus {
   flex-direction: row;
   padding: 0px;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1170px;
 }
 .shop-border {
   outline: 3px solid #d3c59d;
@@ -598,7 +615,7 @@ input:focus {
 /* footer */
 .referense {
   background-color: #f4f7f6;
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -643,7 +660,7 @@ input:focus {
   overflow: hidden;
 }
 .copyright {
-  width: 1172px;
+  max-width: 1172px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -807,4 +824,140 @@ input:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* popup desctop end */
+/* popup desktop end */
+
+/* mobile */
+@media (max-width: 640px) {
+  .header {
+    background: url("../images/banner-mobile.jpg") no-repeat center center /
+      cover;
+    height: 100vh;
+    max-height: 667px;
+  }
+  .block-header {
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 36px;
+    padding: 0 15px;
+  }
+  .main {
+    margin: 0px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+  .menu-list {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+  }
+  .burger-nav-item {
+    width: 23px;
+    height: 3px;
+    margin-bottom: 5.5px;
+    background-color: #fff;
+    list-style-type: none;
+  }
+  .trends-content {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .trend-content {
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 0px;
+  }
+  .trend-content:nth-child(n + 2) {
+    margin-left: 0px;
+  }
+  .trend-title {
+    font-size: 16px;
+  }
+  .trends {
+    margin-top: 45px;
+    width: 100%;
+  }
+  .trends-title,
+  .shops-title {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-wrap: wrap;
+  }
+  .shops-content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .shop-content:nth-child(n) {
+    width: 100%;
+    margin: 15px;
+    padding: 0 20px;
+  }
+  .shop-content:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  .img {
+    width: 100%;
+    min-width: 360px;
+    min-height: 250px;
+  }
+  .content {
+    margin-left: 0px;
+  }
+  .content-title {
+    margin-top: 17px;
+    margin-bottom: 25px;
+    line-height: 21px;
+  }
+  .content-title-text {
+    font-size: 16px;
+  }
+  .data-time {
+    margin-bottom: 25px;
+  }
+  .content-text-p {
+    font-size: 14px;
+  }
+  .sidebar {
+    max-width: 100%;
+  }
+  .posts-input {
+    width: 100%;
+  }
+  .posts {
+    margin-bottom: 45px;
+    width: 100%;
+  }
+  .shop-title {
+    font-size: 17px;
+  }
+  .referense {
+    margin: 40px 15px 0px;
+  }
+  .card::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #eee;
+    display: block;
+    margin: 22px auto 0 auto;
+  }
+  .copyright {
+    margin-top: 50px;
+  }
+  .logo-mobile {
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+}
