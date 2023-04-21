@@ -591,6 +591,12 @@ input:focus {
   text-align: center;
   width: 100%;
 }
+.shop-content-image-mobile {
+  display: none;
+}
+.shop-content-image-tablet {
+  display: none;
+}
 .shop-link {
   text-decoration: none;
   color: #bb9e5c;
@@ -830,7 +836,7 @@ input:focus {
 @media (max-width: 640px) {
   .header {
     background: url("../images/banner-mobile.jpg") no-repeat center center /
-      cover;
+cover;
     height: 100vh;
     max-height: 667px;
   }
@@ -843,7 +849,10 @@ input:focus {
     padding: 0 15px;
   }
   .main {
+    flex-wrap: wrap;
     margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .logo {
     display: block;
@@ -891,6 +900,7 @@ input:focus {
   }
   .container {
     flex-wrap: wrap;
+    padding: 0px;
   }
   .card {
     flex-wrap: wrap;
@@ -907,6 +917,12 @@ input:focus {
   .shop-content:nth-child(n + 2) {
     margin-top: 30px;
   }
+  .shop-content-image-mobile {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
   .img {
     width: 100%;
     min-width: 360px;
@@ -930,7 +946,9 @@ input:focus {
     font-size: 14px;
   }
   .sidebar {
-    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .posts-input {
     width: 100%;
@@ -939,11 +957,36 @@ input:focus {
     margin-bottom: 45px;
     width: 100%;
   }
+  .other {
+    width: 100%;
+    margin-top: 44px;
+  }
+  .other-form {
+    width: 100%;
+  }
+  .other-input {
+    width: 100%;
+  }
+  .other-btn {
+    width: 100%;
+  }
+  .section-tags {
+    width: 100%;
+  }
   .shop-title {
     font-size: 17px;
   }
+  .shop-content-image-mobile {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .shop-content-image {
+    display: none;
+  }
   .referense {
-    margin: 40px 15px 0px;
+    margin: 43px 15px 0px;
   }
   .card::after {
     content: "";
@@ -953,7 +996,7 @@ input:focus {
     display: block;
     margin: 22px auto 0 auto;
   }
-  .copyright {
+  .copyright-text {
     margin-top: 50px;
   }
   .logo-mobile {
