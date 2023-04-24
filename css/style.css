@@ -20,7 +20,7 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
 }
 .header {
   background-image: url(../images/banner-bg.jpg);
@@ -847,16 +847,18 @@ cover;
     font-size: 26px;
     line-height: 36px;
     padding: 0 15px;
+    margin: 44px auto;
   }
   .main {
     flex-wrap: wrap;
-    margin: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* margin: 0px; */
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .logo {
     display: block;
-    margin: 0 auto 50px auto;
+    margin: 223px auto 0px auto;
+    width: 267px;
   }
   .menu-list {
     display: none;
@@ -899,8 +901,11 @@ cover;
     font-size: 16px;
   }
   .container {
+    width: 100%;
     flex-wrap: wrap;
     padding: 0px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
   }
   .card {
     flex-wrap: wrap;
@@ -947,8 +952,8 @@ cover;
   }
   .sidebar {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .posts-input {
     width: 100%;
@@ -1002,5 +1007,31 @@ cover;
   .logo-mobile {
     display: block;
     margin: 0 auto 50px auto;
+  }
+/*----- popup mobile -----*/
+  .popup-body {
+    width: 330px;
+    padding: 30px 20px;
+    }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend-content {
+    width: 48%;
+  }
+  .trend-content:nth-child(n) {
+    margin: 0px;
+  }
+  .trend-content:nth-child(n+3) {
+    margin-top: 5px;
+  }
+  .trend-content:nth-child(2n+2) {
+    margin-left: 5px;
+  }
+  .trend-title {
+    font-size: 3vw;
+  }
+  .trend-border {
+    margin: 0px 3vw 3vw;
+    padding: 5vw;
   }
 }
