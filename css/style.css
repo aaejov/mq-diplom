@@ -251,7 +251,7 @@ h1 {
 }
 .img {
   width: 381px;
-  /* min-width: 381px; */
+  min-width: 381px;
   background-color: #f4f7f6;
   min-height: 300px;
   color: black;
@@ -532,7 +532,7 @@ input:focus {
   opacity: 0.4;
   width: 66px;
   height: 3px;
-  margin: 10px auto 0 auto;
+  margin: 13px auto 0 auto;
 }
 .shops-content {
   display: flex;
@@ -992,6 +992,7 @@ input:focus {
   }
   .section-tags {
     width: 100%;
+    justify-content: space-between;
   }
   .shops {
     margin-top: 45px;
